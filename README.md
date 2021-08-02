@@ -82,7 +82,7 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 Following are the results after normalization of the images:
 
-<img src="Results/Normalization.png">
+<img src="Results/Normailzation.png">
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
