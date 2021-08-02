@@ -64,11 +64,11 @@ signs data set:
 
 Following you will see the detailed dataset structure, the plotting occurance of each image class to get an idea of how the data is distributed in dataset. This can help you understand where potential pitfalls could occur if the datset isn't uniform in terms of baseline occurance.
 
-<img src="Results/Test_Dataset_Sign_Counts.jpg">
+<img src="Results/Test_Dataset_Sign_Counts.png">
 
-<img src="Results/Train_Dataset_Sign_Counts.jpg">
+<img src="Results/Train_Dataset_Sign_Counts.png">
 
-<img src="Results/Valid_Dataset_Sign_Counts.jpg">
+<img src="Results/Valid_Dataset_Sign_Counts.png">
 
 ### Design and Test a Model Architecture
 
@@ -146,12 +146,12 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-<img src="test_images/1.png">
-<img src="test_images/2.png">
-<img src="test_images/3.png">
-<img src="test_images/4.png">
-<img src="test_images/5.png">
-<img src="test_images/6.png">
+<img src="test_data/1.png">
+<img src="test_data/2.png">
+<img src="test_data/3.png">
+<img src="test_data/4.png">
+<img src="test_data/5.png">
+<img src="test_data/6.png">
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
