@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## Rubric Points
+## Rubric Points:
 
 * Objectives of project -
 1. Submission of file : Ipython notebook with code, HTML output of the code and a writeup report.
@@ -42,15 +42,9 @@ The goals / steps of this project are the following:
 10. Model Certainty-Softmax Probability.
 
 
-### Writeup / README
+## Data Set Summary & Exploration:
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
-
-You're reading it! and here is a link to my [project code](https://github.com/drtupe/Traffic_Sign_Classifier/blob/master/Traffic_Sign_Classifier_final.ipynb)
-
-### Data Set Summary & Exploration
-
-#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
@@ -60,7 +54,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3)
 * The number of unique classes/labels in the data set is 43
 
-#### 2. Include an exploratory visualization of the dataset.
+### 2. Include an exploratory visualization of the dataset.
 
 Following you will see the detailed dataset structure, the plotting occurance of each image class to get an idea of how the data is distributed in dataset. This can help you understand where potential pitfalls could occur if the datset isn't uniform in terms of baseline occurance.
 
@@ -70,9 +64,9 @@ Following you will see the detailed dataset structure, the plotting occurance of
 
 <img src="Results/Valid_Dataset_Sign_Counts.png">
 
-### Design and Test a Model Architecture
+## Design and Test a Model Architecture:
 
-#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
+### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
 As a first step, I decided to convert the images to grayscale because the technical paper outlined several steps that was used to achieve 99% accuracy result and offcourse its easy to implement, It works better because the excess information only adds extra confusion into the learning process. After grayscale processing, normalization of the images in data was done, it helped to speed up the training and performance. 
 
@@ -85,7 +79,7 @@ Following are the results after normalization of the images:
 <img src="Results/Normailzation.png">
 
 
-#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
@@ -109,11 +103,11 @@ My final model consisted of the following layers:
 | Fully connected		| input 84, output 43   						| 
 
 
-#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used an LeNet model as my base, but to try on something new on my own I added an additional convolution without a max pooling layer. I used the AdamOptimizer with a learning rate of 0.00097. The EPOCH used was 45 while the batch size was 120. Other important parameters which I tried to change and play around were various different distributions of image class counts and it had some notable effects on the training set accuracy. As stated during the lecture, using a basic LeNet model would had been sufficient for getting 94% accuracy with virtually no change on the test set but that would had hampered hands-on-learing. When I finally stopped testing I got 94% accuracy on the test set.
 
-#### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 <img src="Results/testVsValidation.png">
 
@@ -140,9 +134,9 @@ If an iterative approach was chosen:
     * The dropout probability mattered a lot at early stage of training, but after few iterations I freezed the dropout to 50%. The biggest that effected my accuracy was the data images generated with random modifications. This helped improve my accuracy as it increased the samples of the image dataset which had less number of samples initially.
 
 
-### Test a Model on New Images
+## Test a Model on New Images:
 
-#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
 
@@ -153,7 +147,7 @@ Here are five German traffic signs that I found on the web:
 <img src="test_data/5.png">
 <img src="test_data/6.png">
 
-#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
