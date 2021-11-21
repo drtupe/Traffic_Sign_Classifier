@@ -24,15 +24,15 @@ The goals / steps of this project are the following:
 ## Rubric Points:
 
 * Objectives of project -
-1. Submission of file : Ipython notebook with code, HTML output of the code and a writeup report.
+1. Submission of file: Ipython notebook with code, HTML output of the code and a writeup report.
 
 * Dataset Exploration -
 2. Dataset summary
-3. Exploratory Visualization : visualization of dataset.
+3. Exploratory Visualization: visualization of dataset.
 
 * Design and test a model architecture -
-4. Preprocessing : describe and explain preprocessing techniques used.
-5. Model Architecture : Details of model explaining its architecture.
+4. Preprocessing: describe and explain preprocessing techniques used.
+5. Model Architecture: Details of model explaining its architecture.
 6. Model training
 7. Solution Approach
 
